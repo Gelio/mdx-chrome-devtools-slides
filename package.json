@@ -1,0 +1,15 @@
+{
+  "name": "chrome-devtools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "deck.mdx",
+  "scripts": {
+    "start": "mdx-deck deck.mdx"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mdx-deck": "^1.7.7"
+  }
+}
