@@ -4,12 +4,15 @@
   "description": "",
   "main": "deck.mdx",
   "scripts": {
-    "start": "mdx-deck deck.mdx"
+    "build": "mdx-deck build deck.mdx",
+    "start": "mdx-deck deck.mdx",
+    "publish:deck": "npm run build && gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "mdx-deck": "^1.7.7"
   }
 }
