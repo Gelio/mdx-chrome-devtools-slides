@@ -12,6 +12,64 @@ export default TitleLayout
 
 ## Agenda
 
-1. Trochę historii
-2. Cośtam jeszcze
-3. Coś więcej
+1. Motywacja
+2. Podstawowe funkcjonalności
+3. Odpluskwianie kodu Javascript
+4. Pozostałe funkcjonalności
+
+
+---
+export default TitleLayout
+
+1. Motywacja
+
+* umożliwienie spojrzenia wewnątrz środowiska uruchomieniowego
+
+
+```notes
+Około roku 2008:
+* Safari
+* Internet Explorer 8
+* Google Chrome
+
+```
+
+
+---
+  1. Kod JS uruchamiany przez przeglądarkę
+  2. Ciężki w debugowaniu tradycyjnymi metodami
+  3. Historia - pierwsze DevTools
+  4. Chrome DevTools, bo mam najwięcej doświadczenia. Są też inne.
+2. Podstawowe funkcjonalności
+  2.1. Wyświetlanie drzewa dokumentu (DOM, HTML) + jego modyfikacja.
+    Także _hack_ banku.
+  2.2. Wyświetlanie i modyfikacja zaaplikowanych styli. Testowanie kolorów bezpośrednio w
+    przeglądarce zamiast przechodzenia do kodu.
+  2.3. Konsola - możliwość wykonania dowolnego kodu JS, wpłynięcia na stronę.
+    2.3.1. Ostrzeżenie z Facebooka
+    2.3.2. Info o rekrutacji od innych firm
+3. Debugowanie
+  3.1. Podstawowe - `console.log`
+  3.2. Lepsze - `console.table` i podobne metody z `console`
+  3.3. Najlepsze - debugger + _Sources_
+    3.3.1. Source mapy - z i bez 
+    3.3.2. Breakpointy - zwykłe i bardziej zaawansowane
+    3.3.3. Zatrzymywanie kodu na requeście HTTP (XHR), modyfikacja DOM itp.
+4. Inne zakładki
+  4.1. _Network_ - analiza aktywności sieci i możliwość symulacji warunków sieciowych
+  4.2. Responsive web design za pomocą zmiany rozmiaru przeglądarki
+    4.2.1. Lepsze od zwykłej zmiany rozmiaru okna bo zachowuje konkretne aspect ratio oraz zmienia
+      zachowanie myszki.
+  4.3. _Audits_ - testowanie strony pod różnymi kątami
+  4.4. _Performance_ - analiza wydajności i zużycia procesora, FPS
+  4.5. _Application_ - informacje o rozmiarze strony, użytych ciasteczkach, `localStorage`
+  4.6. Analiza animacji, także uruchomienie ich w zwolnionym tempie
+  4.7. Analiza wykorzystania kodu (Coverage) z przesłanych plików
+  4.8. Wtyczki od frameworków i bibliotek
+    * React
+    * redux
+5. Pozostałe
+  5.1. Szybka zmiana koloru w CSS
+  5.2. Podpowiedzi co do możliwych wartości CSS
+  5.3. Ciemna skórka
+  5.4. ...
