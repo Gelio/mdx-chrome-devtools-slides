@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { components } from 'mdx-deck';
-console.log(components);
 
 const Root = styled.div([], {
   width: '100%',
