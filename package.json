@@ -2,10 +2,10 @@
   "name": "chrome-devtools",
   "version": "1.0.0",
   "description": "",
-  "main": "deck.mdx",
+  "main": "deck.js",
   "scripts": {
-    "build": "mdx-deck build deck.mdx",
-    "start": "mdx-deck deck.mdx",
+    "build": "mdx-deck build deck.js",
+    "start": "mdx-deck deck.js",
     "publish:deck": "npm run build && gh-pages -d dist"
   },
   "keywords": [],

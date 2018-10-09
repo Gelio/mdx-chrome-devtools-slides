@@ -7,7 +7,7 @@ const Label = styled.div([], {
 
 export default ({ children, label }) => (
   <div>
-    {React.cloneElement(children, { alt: label })}
+    {React.cloneElement(children, { alt: children.label || label })}
 
     <Label>{label}</Label>
   </div>
