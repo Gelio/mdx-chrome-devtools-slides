@@ -17,7 +17,7 @@ class PostponedVideo extends Component {
   }
 
   componentDidMount() {
-    this._video.load();
+    this._resetVideo();
     this._updateVideoBasedOnStep();
   }
 
@@ -37,6 +37,10 @@ class PostponedVideo extends Component {
     } else if (step === 1) {
       this._video.play();
     }
+  }
+
+  _resetVideo() {
+    this._video.load();
   }
 }
 
