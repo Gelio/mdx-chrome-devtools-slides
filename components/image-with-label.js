@@ -6,9 +6,9 @@ const Label = styled.div([], {
 });
 
 export default ({ children, label }) => (
-  <div>
+  <React.Fragment>
     {React.cloneElement(children, { alt: children.label || label })}
 
     <Label>{label}</Label>
-  </div>
+  </React.Fragment>
 );
