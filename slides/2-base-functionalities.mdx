@@ -1,6 +1,7 @@
 import { components as Components } from 'mdx-deck';
 
 import ImageWithLabel from '../components/image-with-label';
+import PostponedVideo from '../components/postponed-video';
 
 
 ## 2. Podstawowe funkcjonalności
@@ -9,17 +10,41 @@ import ImageWithLabel from '../components/image-with-label';
 
 1. Wyświetlanie drzewa dokumentu (**D**ocument **O**bject **M**odel) i jego modyfikacja
 
-TODO: Placeholder na gifa
 
-```notes
-Przykład: zmiana salda konta bankowego
-```
+<ImageWithLabel label={
+  <React.Fragment>
+    Źródło:{' '}
+    <Components.a href="https://www.google.com/">https://www.google.com/</Components.a>
+  </React.Fragment>
+}>
+  <img src="./static/inspect-element.png" alt="Wyświetlenie informacji o elemencie" />
+</ImageWithLabel>
+
+---
+
+Przykład modyfikacji - zmiana salda na koncie bankowym
+
+<ImageWithLabel label={
+  <React.Fragment>
+    Źródło:{' '}
+    <Components.a href="https://login.ingbank.pl/mojeing/demo/#home">https://login.ingbank.pl/mojeing/demo/#home</Components.a>
+  </React.Fragment>
+}>
+  <PostponedVideo src="https://i.gyazo.com/ddc26bc969cc442d1967bb1be808afc4.mp4" />
+</ImageWithLabel>
 
 ---
 
 2. Wyświetlanie i manipulacja stylami elementów
 
-TODO: Placeholder na gifa
+<ImageWithLabel label={
+  <React.Fragment>
+    Źródło:{' '}
+    <Components.a href="https://login.ingbank.pl/mojeing/demo/#home">https://login.ingbank.pl/mojeing/demo/#home</Components.a>
+  </React.Fragment>
+}>
+  <PostponedVideo src="https://i.gyazo.com/383be1da8c3d0666935263f02de7df02.mp4" />
+</ImageWithLabel>
 
 ```notes
 Zmiana kolorów z live-feedbackiem
@@ -33,10 +58,40 @@ Bez przechodzenia do edytora tekstu
 * odbieranie informacji diagnostycznych
 * wykonywanie kodu Javascript
 
-TODO: Placeholder na gifa
 
 ```notes
 Można też wpłynąć na stronę, np. na obiekty globalne z Javascriptu
+
+Przykład: wypisanie do konsoli informacji o naciśnięciu przycisku
+```
+
+<ImageWithLabel label={
+  <React.Fragment>
+    Źródło:{' '}
+    <Components.a href="http://jsfiddle.net/">http://jsfiddle.net/</Components.a>
+  </React.Fragment>
+}>
+  <PostponedVideo src="https://i.gyazo.com/b5d57ff07159319554fe5fe430c9e813.mp4" />
+</ImageWithLabel>
+
+---
+
+Przykład - interakcja ze stroną z poziomu konsoli 
+
+<ImageWithLabel label={
+  <React.Fragment>
+    Źródło:{' '}
+    <Components.a href="https://www.google.com/">https://www.google.com/</Components.a>
+  </React.Fragment>
+}>
+  <PostponedVideo src="https://i.gyazo.com/8d4b7d546bd2b61b65b1ba3843d10c96.mp4" />
+</ImageWithLabel>
+
+
+```notes
+Odszukanie elementu na stronie z poziomu konsoli.
+Wykonanie tych samych operacji, które są dostępne w Javascripcie.
+
 ```
 
 ---
@@ -63,13 +118,10 @@ Ogłoszenie o rekrutacji do firmy w konsoli
 <ImageWithLabel label={
   <React.Fragment>
     Źródło:{' '}
-    <Components.a href="https://elijahmanor.com/find-good-devs/">https://elijahmanor.com/</Components.a>
+    <Components.a href="https://www.reddit.com/">https://www.reddit.com/</Components.a>
   </React.Fragment>
 }>
   <img
-    src="https://elijahmanor.com/assets/images/2014/Aug/Screen_Shot_2014_08_14_at_12_52_54_PM-1.png"
-    alt="Ogłoszenie o rekturacji w konsoli przez Mozilla" />
+    src="https://i.gyazo.com/fdddbf862ab2a7af1d66370e947da680.png"
+    alt="Ogłoszenie o rekturacji w konsoli przez Reddit" />
 </ImageWithLabel>
-
-
-

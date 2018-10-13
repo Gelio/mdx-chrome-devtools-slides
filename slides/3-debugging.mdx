@@ -16,9 +16,14 @@ import PostponedVideo from '../components/postponed-video'
 
 ---
 
-* wyświetlanie typów prostych i złożonych
+Wyświetlenie typów prostych i złożonych
 
 <PostponedVideo src="https://i.gyazo.com/9130822a90578cc87b009cc4648a7f88.mp4" />
+
+
+```notes
+Zagnieżdżone wartości w obiektach, tablicach.
+```
 
 ---
 
@@ -26,17 +31,34 @@ import PostponedVideo from '../components/postponed-video'
 
 <img src="https://i.gyazo.com/cdb42cf3a8f1448537d4e67a8f26b2d7.png" />
 
+
+```notes
+Różne typy kolorowania tła -> lepsza widoczność
+
+Przy `warn` i `error` -> stacktrace (ślad stosu)
+```
+
 ---
 
 `console.table`
 
 <img src="https://i.gyazo.com/adec5690b174e6d7dc4bf9568cd2ded2.png" />
 
+```notes
+Wyświetlenie tablicy danych o podobnym kształcie jako tabela
+```
+
 ---
 
 `console.time` oraz `console.timeEnd`
 
 <img src="https://i.gyazo.com/2910a7c37083063e0f93e8fb86bfec04.png" />
+
+```notes
+Mierzenie czasu między instrukcjami.
+
+Podstawowa analiza wydajności kodu.
+```
 
 ---
 
@@ -46,9 +68,12 @@ import PostponedVideo from '../components/postponed-video'
 2. Odpluskwiacz w zakładce _Sources_
 
 * zatrzymanie wykonania (_breakpoints_)
+
   * przy konkretnej linijce kodu
   * przy zmianie drzewa struktury strony
   * przy wysłaniu zapytań sieciowych
+
+
 * warunkowe zatrzymanie w kodzie (_conditional breakpoints_)
 * podglądanie wartości zmiennych, modyfikowanie ich
 * przy kodzie transpilowanym wymaga map źródeł (_sourcemaps_) do poprawnego działania
