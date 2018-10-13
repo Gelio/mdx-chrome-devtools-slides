@@ -1,3 +1,9 @@
+
+import { components as Components } from 'mdx-deck';
+
+import ImageWithLabel from '../components/image-with-label';
+import PostponedVideo from '../components/postponed-video';
+
 ## Pozostałe funkcjonalności
 
 ---
@@ -7,25 +13,64 @@ Zakładka _Network_
 * aktywność sieciowa
 * możliwość symulacji innych warunków sieciowych (wprowadzanie sztucznych opóźnień)
 
-TODO: zdjęcie
-
 ---
 
-Testowanie responsywności strony
-
-TODO: gif
+<ImageWithLabel label={
+  <React.Fragment>
+    Zawartość zakładki <em>Network</em> po załadowaniu{' '}
+    <Components.a href="https://ww2.mini.pw.edu.pl/">https://ww2.mini.pw.edu.pl/</Components.a>
+  </React.Fragment>
+}>
+  <img src="https://i.gyazo.com/493823eb03df3df1ff2473f62021faa2.png" />
+</ImageWithLabel>
 
 ---
 
 Przeprowadzenie audytu w _Audits_
 
-Za pomocą Lighthouse, o którym wspominała Beata tydzień temu.
+<ImageWithLabel label="Zakładka Audits">
+  <img src="https://i.gyazo.com/3e837df509fdfc435e136141d4357edf.png" />
+</ImageWithLabel>
+
+```notes
+Audyt za pomocą Lighthouse (od Google)
+Mówiła o tym tydzień temu Beata
+```
+
+---
+
+<ImageWithLabel label={
+  <React.Fragment>
+    Wyniki audytu dla{' '}
+    <Components.a href="https://ww2.mini.pw.edu.pl/">https://ww2.mini.pw.edu.pl/</Components.a>
+  </React.Fragment>
+}>
+  <img src="https://i.gyazo.com/97b8bb00bd5cc01922d5032eacf05be8.png" />
+</ImageWithLabel>
+
+```notes
+Wniosek: strona ładowałaby się wolno na realnym urządzeniu mobilnym
+```
 
 ---
 
 Analiza wydajności w _Performance_
 
-TODO: obrazek
+<ImageWithLabel label={
+  <React.Fragment>
+    Analiza uruchominona przy ładowaniu{' '}
+    <Components.a href="https://ww2.mini.pw.edu.pl/">https://ww2.mini.pw.edu.pl/</Components.a>
+  </React.Fragment>
+}>
+  <img src="https://i.gyazo.com/f47b87899354418467910e1002d1a86d.png" />
+</ImageWithLabel>
+
+```notes
+Widać
+* które funkcje zajmowały najwięcej czasu
+* ilość klatek na sekundę
+```
+
 
 ---
 
@@ -34,17 +79,58 @@ Informacje o stronie w _Application_
 * zużywana ilość miejsca na dysku
 * użyte ciasteczka, dane w `localStorage`
 
+<ImageWithLabel label={
+  <React.Fragment>
+    Dane dla{' '}
+    <Components.a href="https://ww2.mini.pw.edu.pl/">https://ww2.mini.pw.edu.pl/</Components.a>
+  </React.Fragment>
+}>
+  <img src="https://i.gyazo.com/b98d1c19e9d68555e93116068ebebd1a.png" />
+</ImageWithLabel>
+
+```notes
+Można też wyczyścić wszystkie dane związane z daną stroną.
+```
+
 ---
 
 Analiza wykorzystania kodu (_coverage_)
 
-TODO: obrazek
+<ImageWithLabel label={
+  <React.Fragment>
+    Dane dla{' '}
+    <Components.a href="https://ww2.mini.pw.edu.pl/">https://ww2.mini.pw.edu.pl/</Components.a>
+  </React.Fragment>
+}>
+  <img src="https://i.gyazo.com/8ad221f7553c05436b9d73185c1b6eae.png" />
+</ImageWithLabel>
+
+
+```notes
+Od razu widać, że większość pobranego kodu Javascript nie została uruchomiona.
+W zakładce _Sources_ można zobaczyć szczegóły (per linia)
+```
 
 ---
 
 Wtyczki do frameworków i bibliotek
 
-* React
-* redux
 
-TODO: obrazki
+---
+
+Przykład - React Developer Tools
+
+<ImageWithLabel label={
+  <React.Fragment>
+    Przykład z analizy strony {' '}
+    <Components.a href="https://react-hn.appspot.com/">https://react-hn.appspot.com/</Components.a>
+  </React.Fragment>
+}>
+  <PostponedVideo src="https://i.gyazo.com/8f7b1483001c33fbcb5f33a907143114.mp4" />
+</ImageWithLabel>
+
+```notes
+Drzewo komponentów Reactowych
+Widać przekazywane dane, stan komponentów.
+Można je modyfikować.
+```
