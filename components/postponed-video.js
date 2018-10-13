@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { updaters, withDeck } from 'mdx-deck';
 
+const transitionDuration = 400;
+
 class PostponedVideo extends Component {
   constructor(props) {
     super(props);
@@ -21,7 +23,11 @@ class PostponedVideo extends Component {
     this._updateVideoBasedOnStep();
   }
 
-  componentDidUpdate() {
+  componentDidUpdate(prevProps) {
+    if (prevProps.deck.active && !this.props.deck.active) {
+      setTimeout(this._resetVideo, transitionDuration);
+    }
+
     this._updateVideoBasedOnStep();
   }
 
@@ -39,9 +45,9 @@ class PostponedVideo extends Component {
     }
   }
 
-  _resetVideo() {
+  _resetVideo = () => {
     this._video.load();
-  }
+  };
 }
 
 export default withDeck(PostponedVideo);
