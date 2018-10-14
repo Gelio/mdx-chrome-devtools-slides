@@ -7,9 +7,10 @@
     "start": "mdx-deck deck.js",
     "copy:static": "cp static dist/ -r",
     "build": "npm run build:html",
+    "build:all": "npm run build:html && npm run build:pdf",
     "build:html": "mdx-deck build deck.js && npm run copy:static",
-    "publish:deck": "npm run build:html && gh-pages -d dist",
-    "build:pdf": "mdx-deck pdf deck.js -d documents --out-file mdx-chrome-devtools-slides.pdf"
+    "build:pdf": "mdx-deck pdf deck.js -d documents --out-file mdx-chrome-devtools-slides.pdf",
+    "publish:deck": "npm run build:html && gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
