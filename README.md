@@ -8,7 +8,7 @@ for more information.
 
 ## Requirements
 
-- Node v8.11.0
+- Node v8.11.0 or higher
 
 ## Set up
 
@@ -25,6 +25,16 @@ npm run build
 ```
 
 The slides will be saved in the `dist` directory.
+
+#### Exporting to PDF
+
+There is a way to export the slides to a PDF:
+
+```bash
+npm run build:pdf
+```
+
+The exported PDF will be saved in the `documents` directory. It does not contain videos.
 
 ### Deploying the slides to GitHub Pages
 
