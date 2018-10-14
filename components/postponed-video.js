@@ -53,7 +53,10 @@ class PostponedVideo extends Component {
 
   componentDidMount() {
     this._resetVideo();
-    this._updateVideoBasedOnStep();
+
+    if (this.props.deck.active) {
+      this._updateVideoBasedOnStep();
+    }
   }
 
   componentDidUpdate(prevProps) {
@@ -80,12 +83,12 @@ class PostponedVideo extends Component {
   }
 
   _updateVideoBasedOnStep() {
-    const { step } = this.props.deck;
+    const { step, active } = this.props.deck;
 
     if (step === 0) {
       this._video.pause();
       this.setState({ isPlaying: false });
-    } else if (step === 1) {
+    } else if (step === 1 && active) {
       this._startPlaying();
     }
   }
