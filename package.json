@@ -4,9 +4,11 @@
   "description": "",
   "main": "deck.js",
   "scripts": {
-    "build": "mdx-deck build deck.js",
     "start": "mdx-deck deck.js",
-    "publish:deck": "npm run build && gh-pages -d dist"
+    "copy:static": "cp static dist/ -r",
+    "build:html": "mdx-deck build deck.js && npm run copy:static",
+    "publish:deck": "npm run build:html && gh-pages -d dist",
+    "build:pdf": "mdx-deck pdf deck.js -d documents --out-file mdx-chrome-devtools-slides.pdf"
   },
   "keywords": [],
   "author": "",
